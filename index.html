@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Personajes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="CreateCharacter" class="container">
+        <h1>Crear Nuevo Personaje</h1>
+        <form id="createCharacterForm">
+            <div class="item">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="item">
+                <label for="especie">Especie:</label>
+                <input type="text" id="especie" name="especie" required>
+            </div>
+            <div class="item">
+                <label for="años">Años:</label>
+                <input type="number" id="años" name="años" required> 
+            </div>
+            <button type="submit">Crear Personaje</button>
+        </form>
+    </section>
+    
+    <section id="Character" class="container">
+        <h1>Lista de Personajes</h1>
+        <ul id="charactersList"></ul>
+    </section>
+
+ 
+    <section id="UpdateCharacter" class="container">
+        <h1>Actualizar Personaje</h1>
+        <form id="updateCharacterForm">
+            <input type="hidden" id="updateId" name="updateId">
+            <div class="item">
+                <label for="updateNombre">Nombre:</label>
+                <input type="text" id="updateNombre" name="updateNombre" required>
+            </div>
+            <div class="item">
+                <label for="updateEspecie">Especie:</label>
+                <input type="text" id="updateEspecie" name="updateEspecie" required>
+            </div>
+            <div class="item">
+                <label for="updateAños">Años:</label>
+                <input type="number" id="updateAños" name="updateAños" required> 
+            </div>
+            <button type="button" onclick="submitUpdate()">Actualizar Personaje</button>
+        </form>
+    </section>
+
+    <script src="src/services.js"></script> 
+</body>
+</html>

@@ -1,0 +1,9 @@
+{  
+    "zoo":[
+        {"id":"1","nombre":"tigre", "especie":"felino", "años":"5"},
+        {"id":"2","nombre":"elefante", "especie":"mamífero", "años":"12"},
+        {"id":"3","nombre":"águila", "especie":"ave", "años":"4"},
+        {"id":"4","nombre":"cocodrilo", "especie":"reptil", "años":"7"}
+    ]
+}
+
